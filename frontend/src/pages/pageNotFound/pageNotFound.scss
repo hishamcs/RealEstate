@@ -1,0 +1,29 @@
+.pageNotFound{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        border: 1px solid gray;
+        padding: 50px;
+        backdrop-filter: blur(5px);
+        box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+        border-radius: 10px;
+        align-items: center;
+
+        button {
+            padding: 10px;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            background-color: rgb(62, 52, 52);
+            color: white;
+            cursor: pointer;
+        }
+
+    }
+}

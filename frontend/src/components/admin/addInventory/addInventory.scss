@@ -1,0 +1,82 @@
+.addInventory{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.724);
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: scroll;
+
+    .modal {
+        background-color: #2a3447;
+        padding: 50px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        height: max-content;
+
+        .close{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            background-color: #686767;
+            padding: 5px;
+        }
+
+        h1 {
+            margin-bottom: 40px;
+            font-size: 24px;
+            color: #ddd;
+        }
+
+        form {
+            max-width: 700px;
+            justify-content: space-between;
+
+            .item {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                margin-bottom: 20px;
+
+                label{
+                    font-size: 14px;
+                    display: none;
+                }
+                
+                input, textarea, select{
+                    padding: 10px;
+                    background-color: transparent;
+                    border: 1px solid #ddd;
+                    color: white;
+                    border-radius: 5px;
+                }
+                select {
+                    option {
+                        background-color: #2a3447;
+                    }
+                }
+
+            }
+
+            button {
+                margin-top: 10px;
+                padding: 10px;
+                width: 100%;
+                background-color: rgba(94, 88, 88, 0.724);
+                color: #ddd;
+                cursor: pointer;
+                
+                &:hover {
+                    scale: 1.05;
+                }
+            }
+
+        }
+    }
+}

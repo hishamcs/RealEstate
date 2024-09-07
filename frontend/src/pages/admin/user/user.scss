@@ -1,0 +1,74 @@
+.user {
+        height: 100%;
+        overflow: scroll;
+    .info {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        
+        
+        img {
+            height: 100px;
+            width: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .topInfo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .details {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
+    .propertiesTable {
+        margin-top: 20px;
+        padding-right: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        height: 100%;
+        overflow: scroll;
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border-radius: 10px;
+            img{
+                width: 200px;
+            }
+            
+            th, td {
+                border: 1px solid #ddd;
+                padding: 8px;
+                text-align: center;
+                // color:rgb(67, 53, 53);
+            }
+
+
+            th {
+                background-color: #6c6767;
+                color: #090909;
+            }
+
+            tr{
+                &:nth-child(even) {
+                    background-color: #595555;
+                }
+            }
+            td {
+                button{
+                    background-color: gray;
+                    padding: 10px;
+                    border-radius: 10px;
+                    color: #090909;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

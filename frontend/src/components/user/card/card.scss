@@ -1,0 +1,99 @@
+.card {
+    // display: flex;
+    // gap: 20px;
+    // max-width: 750px;
+    max-width: 400px;
+    width: 350px;
+    border: 1px solid #888;
+    height: max-content;
+    .imgContainer{
+        flex: 2;
+        height: 200px;
+        img{
+            // height: 100%;
+            // width: 100%;
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+    }
+
+    .textContainer{
+        flex: 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+
+        img {
+            width: 16px;
+            height: 16px;
+        }
+
+        .title{
+            font-size: 20px;
+            font-weight: 600;
+            color: #444;
+            transition: all 0.4 ease;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            &:hover{
+                color: #000;
+                scale: 1.01;
+            }
+        }
+
+        .address {
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: #888;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .typeAndPrce {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-right: 20px;
+            .price {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                font-size: 20px;
+                font-weight: 300;
+                background-color: rgba(254, 205, 81, 0.438);
+                width: max-content;
+            }
+
+            span {
+                background-color: rgb(245, 91, 91);
+                padding: 10px;
+                border-radius: 5px;
+            }
+        }
+        
+
+        .bottom {
+            
+            .features {
+                display: flex;
+                font-size: 12px;
+                gap: 20px;
+
+                .feature {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    background-color: white;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+}

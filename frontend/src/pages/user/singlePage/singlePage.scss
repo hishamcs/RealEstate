@@ -1,0 +1,220 @@
+.singlePage{
+    display: flex;
+    height: 100%;
+    overflow-y: scroll;
+    &::-webkit-scrollbar{
+                width: 5px;
+                background-color: transparent;
+    
+                &-thumb {
+                    background-color: rgba(64, 67, 73, 0.5);
+                }
+    }
+
+    .details {
+        flex: 3;
+        margin-bottom: 20px;
+        
+            
+        .wrapper {
+            padding-right: 50px;
+            padding-bottom: 50px;
+            .propImg{
+                width: 100%;
+                height: 350px;
+                display: flex;
+                // flex-direction: column;
+                // gap: 5px;
+                gap: 20px;
+                .coverPic {
+                    flex: 3;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: 10px;
+                    }
+                }
+
+                .otherImgs {
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    img {
+                        width: 100px;
+                        height: 100px;
+                        object-fit: cover;
+                        border-radius: 10px;
+                    }
+
+                    &::-webkit-scrollbar {
+                        width: 2px;
+                        background-color: transparent;
+                    }
+                
+                    &::-webkit-scrollbar-thumb {
+                        background-color:rgba(64, 67, 73, 0.5);  
+                    }
+                }
+            }
+            
+            .info {
+                margin-top: 50px;
+
+                .top {
+                    display: flex;
+                    justify-content: space-between;
+                    
+
+                    .post {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+                        // width: 100%;
+                        h1 {
+                            font-weight: 400;
+                        }
+
+                        .address {
+                            display: flex;
+                            gap: 5px;
+                            align-items: center;
+                            color: #888;
+                            font-size: 14px;
+
+                            img {
+                                height: 16px;
+                                width: 16px;
+                            }
+
+                        }
+
+                        .typeAndType {
+                            display: flex;
+                            align-items: center;
+                            gap: 20px;
+                            // width: 100%;
+                            justify-content: space-between;
+                            
+                            .price {
+                                padding: 5px;
+                                background-color: rgba(224, 218, 202, 0.438);
+                                border-radius: 5px;
+                                width: max-content;
+                                font-size: 20px;
+                                font-weight: 300;
+                            }
+                            .propertyType{
+                                background-color: rgb(245, 91, 91);
+                                padding: 10px;
+                                border-radius: 5px;
+                            }
+                        }
+                        .cont {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            width: 100%;
+                            gap: 10px;
+                            .sizes {
+                                display: flex;
+                                justify-content: space-between;
+                                gap: 20px;
+                                img {
+                                    width: 24px;
+                                    height: 24px;
+                                }
+                                .size {
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 5px;
+                                    background-color: white;
+                                    padding: 10px 0px;
+                                    border-radius: 5px;
+                                }
+                            }
+
+                            .inveries {
+                                display: flex;
+                                gap: 10px;
+                                .inventry {
+                                    display: flex;
+                                    gap: 5px;
+                                    background-color: #888;
+                                    border-radius: 5px;
+                                    padding: 5px;
+                                    font-size: 12px;
+                                }
+                            }
+
+        
+                        }
+                    }
+
+                }
+
+                .bottom {
+                    margin-top: 50px;
+                    color: #555;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+
+    .features {
+        flex: 2;
+        // background-color: #fcf5f3;
+        margin-bottom: 10px;
+        
+        
+        .wrapper {
+            padding: 0px 20px;
+            display: flex;
+            flex-direction: column;
+            
+            gap: 20px;
+
+            button{
+                margin-top: 20px;
+                padding: 10px;
+                background-color: rgb(101, 43, 43);
+                color: white;
+                font-weight: 500;
+                font-size: 18px;
+                border-radius: 10px;
+                cursor: pointer;
+                
+                &:hover{
+                    scale: 1.05;
+                }
+            }
+
+            table{
+                border: 1px solid black;
+                tbody{
+                    text-align: center;
+                }
+            }
+
+        }
+
+        .termsAndConditions{
+            padding: 10px;
+            margin-top: 20px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

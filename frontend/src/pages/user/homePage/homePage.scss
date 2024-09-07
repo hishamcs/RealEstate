@@ -1,0 +1,27 @@
+.homepage{
+    height: 100%;
+
+    .listContainer {
+        height: 100%;
+
+        .wrapper {
+            height: 100%;
+            padding-right: 50px;
+            display: flex;
+            // flex-direction: column;
+            flex-wrap: wrap;
+            gap: 50px;
+            overflow-y: scroll;
+            padding-bottom: 50px;
+
+            &::-webkit-scrollbar {
+                width: 5px;
+                background-color: transparent;
+            }
+        
+            &::-webkit-scrollbar-thumb {
+                background-color:rgba(64, 67, 73, 0.5);  
+            }
+        }
+    }
+}

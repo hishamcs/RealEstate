@@ -1,0 +1,98 @@
+.property {
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        
+        .topInfo {
+            display: flex;
+            gap: 20px;
+            button {
+                padding: 10px;
+                border-radius: 5px;
+                border: none;
+                cursor: pointer;
+                background-color: #b05848;
+                color: white;
+
+                &.addImg {
+                    background-color: #7f8ca7;
+                }
+            }
+        }
+        .contents {
+            display: flex;
+            gap: 10px;
+            .details {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+    
+                .item {
+                    max-width: 800px;
+                    // padding: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    .title {
+                        font-size: 16px;
+                        font-weight: 600;
+                    }
+                }
+                .bottom {
+                    max-width: 800px;
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;     
+                }
+            }
+    
+            .propImg {
+                width: 400px;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                .coverPic {
+                    img {
+                        width: 400px;
+                        object-fit: cover;
+                        border-radius: 10px;
+                    }
+                }
+    
+                .otherImgs{
+                    display: flex;
+                    overflow-x: scroll;
+                    gap: 5px;
+                    img {
+                        width: 150px;
+                        height: 150px;
+                        object-fit: cover;
+                        border-radius: 10px;
+                    }
+    
+                    &::-webkit-scrollbar{
+                        width: 5px;
+                        background-color: transparent;
+            
+                        &-thumb {
+                            background-color: rgba(112, 128, 159, 0.5);
+                        }
+            }
+                }
+            }
+        }
+
+        .heldUser {
+            a{
+                background-color: #b05848;
+                padding: 10px;
+                border-radius: 10px;
+                &:hover{
+                    scale: 1.05;
+                }
+            }
+        }
+    }
+}

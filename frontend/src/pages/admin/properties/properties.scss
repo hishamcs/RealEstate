@@ -1,0 +1,25 @@
+.properties {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    
+    .info{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+
+        button{
+            width: 200px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #7f8ca7;
+            color: white;
+            cursor: pointer;
+
+            &:hover {
+                scale: 1.05;
+            }
+        }
+    }
+}
